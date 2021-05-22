@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/routetest', function (){
@@ -22,5 +22,9 @@ Route::get('/routetest', function (){
 Route::get('/control','LoginController@contoh');
 
 Route::get('template', function (){
-    return view ('master');
+    return view ('adminbsb.master');
+});
+
+Route::get('cek', function (){
+    return view ('home');
 });
